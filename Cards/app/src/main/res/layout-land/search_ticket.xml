@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Show the UI to search cards -->
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <Spinner
+                android:id="@+id/search_category"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                style="@style/spinner_style"/>
+
+            <Spinner
+                android:id="@+id/search_skill"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                style="@style/spinner_style"/>
+
+            <Button
+                android:id="@+id/search_cards"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="Search"
+                android:layout_margin="0dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/create_cards"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/create_card"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Show the results of search cards :) -->
+    <TableLayout
+        android:id="@+id/table_cards"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0">
+    </TableLayout>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:text="@string/search_card"/>
+
+    <fragment android:name="es.urjc.mov.javsan.cards.fichas.ActualLocation"
+        android:id="@+id/location_fragment"
+        android:layout_height="0dip"
+        android:layout_weight="0"
+        android:layout_width="match_parent" />
+
+
+</LinearLayout>

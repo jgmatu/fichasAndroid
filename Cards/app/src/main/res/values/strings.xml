@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Mountain Cards</string>
+
+    <string name="name_card"></string>
+    <string name="description_card"></string>
+
+    <string name="create_card">Create Card</string>
+    <string name="entry_card">Entry Card</string>
+    <string name="search_card">Search Card</string>
+
+    <string-array name="category">
+        <item>Bike</item>
+        <item>Canoe</item>
+        <item>Drop ravine</item>
+        <item>Hiking</item>
+        <item>Climb</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="skill">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>None</item>
+    </string-array>
+</resources>
