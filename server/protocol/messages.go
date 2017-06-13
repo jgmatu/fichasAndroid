@@ -100,7 +100,7 @@ func WriteString(tx io.Writer, data string) {
       }
 }
 
-func WriteImage(tx io.Writer, path string) {
+func WriteBytes(tx io.Writer, path string) {
       f, err := os.OpenFile(path, os.O_RDONLY, 0600)
 
       if err != nil {
@@ -134,7 +134,7 @@ func WriteImage(tx io.Writer, path string) {
       }
 }
 
-func ReadImage(rx io.Reader, path string) {
+func ReadBytes(rx io.Reader, path string) {
       f, err := os.Create(path)
 
       if err != nil {
