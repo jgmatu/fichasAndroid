@@ -120,7 +120,7 @@ public class Message {
         return new String(data , "UTF-8");
     }
 
-    public static void readImage(InputStream rx, File file) throws IOException {
+    public static void readBytes(InputStream rx, File file) throws IOException {
         FileOutputStream fos = null; // write image inside the disk once reading from socket..
 
         try {
@@ -152,7 +152,7 @@ public class Message {
         }
     }
 
-    public static void writeImage(OutputStream tx, File file) throws IOException {
+    public static void writeBytes(OutputStream tx, File file) throws IOException {
         FileInputStream fis = null; // Read image from disk to write in the socket...
 
         try {
